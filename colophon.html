@@ -3,60 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Technical specifications and code standards used to build SAMURAI Sports Club website.">
-    <meta name="author" content="Yasmina">
-    <title>SAMURAI Sports Club | Colophon</title>
+    <title>Colophon — SAMURAI Sports Club</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/yasmina.css">
 </head>
 <body>
+
     <header>
         <div class="logo-container">
-        <img src="images/logo.png" alt="SAMURAI DOJO Logo" class="header-logo">
-        <h1>SAMURAI Sports Club Astana</h1>
-    </div>
-    <nav>
+            <img src="images/logo.png" alt="SAMURAI DOJO Logo" class="header-logo">
+            <h1>SAMURAI SPORTS CLUB ASTANA</h1>
+        </div>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services &amp; Pricing</a></li>
                 <li><a href="order.html">Book Free Trial</a></li>
-                <li><a href="colophon.html">Colophon</a></li>
+                <li><a href="colophon.html" class="active">Colophon</a></li>
             </ul>
-    </nav>
+        </nav>
     </header>
 
-    <main>
-        <section id="developer-info">
+    <main class="page-container" style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
+        <section class="colophon-card">
             <h2>About This Project</h2>
-            <p>This 4-page website was designed and hand-coded for <em>SAMURAI Sports Club</em> as part of the <em>Introduction to Web Technologies</em> course assignment.</p>
-            
-            <!-- Div used here as a standalone container for project metadata where no specific semantic section applies -->
-            <div class="project-info-card">
-                <p><strong>Developer:</strong> Yasmina (Solo Project)</p>
-                <p><strong>Development Tools:</strong> VS Code on macOS, macOS Terminal, Git &amp; GitHub.</p>
-                <span class="badge">Verified HTML5 / CSS3</span>
-            </div>
+            <p>This 4-page website was designed and hand-coded for <em>SAMURAI Sports Club</em> as part of the <i>Introduction to Web Technologies</i> course assignment.</p>
+            <p><strong>Developer:</strong> Yasmina (Solo Project)</p>
+            <p><strong>Development Tools:</strong> VS Code on macOS, macOS Terminal, Git &amp; GitHub.</p>
         </section>
 
-        <section id="code-standards">
+        <section class="colophon-card">
             <h2>Code Examples &amp; Shortcut Shortcuts</h2>
             <p>To inspect element code in Google Chrome, press <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>I</kbd> on macOS or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> on Windows.</p>
+            <p>Server status verification result: <code>200 OK — All resources loaded successfully.</code></p>
+        </section>
 
-            <p>Sample HTML markup used for the membership price table:</p>
-            <pre><code>&lt;th scope="col"&gt;Monthly Fee&lt;/th&gt;</code></pre>
-
-            <p>Server status verification result: <samp>200 OK - All resources loaded successfully.</samp></p>
-
-            <hr>
-
-            <h3>Validation Standards</h3>
-            <p>This website adheres strictly to <strong>W3C HTML5</strong> guidelines with zero syntax or structural errors.</p>
+        <section class="colophon-card">
+            <h2>Validation Standards</h2>
+            <p>This website adheres strictly to W3C HTML5 guidelines with zero syntax or structural errors.</p>
         </section>
     </main>
 
     <footer>
-        <p>Contact Us: <a href="tel:+77071234567">+7 (707) 123-4567</a> | Email: <a href="mailto:info@samurai-astana.kz">info@samurai-astana.kz</a></p>
+        <p>Contact Us: +7 (707) 123-4567 | Email: info@samurai-astana.kz</p>
         <p>&copy; 2026 SAMURAI Sports Club. All rights reserved &amp; verified.</p>
     </footer>
+
 </body>
 </html>
