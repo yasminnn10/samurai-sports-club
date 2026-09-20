@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a free trial karate lesson at SAMURAI Sports Club in Astana.">
+    <meta name="author" content="Yasmina">
+    <title>SAMURAI Sports Club | Book Free Trial</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/yasmina.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+        <img src="images/logo.png" alt="SAMURAI DOJO Logo" class="header-logo">
+        <h1>SAMURAI Sports Club Astana</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services &amp; Pricing</a></li>
+                <li><a href="order.html">Book Free Trial</a></li>
+                <li><a href="colophon.html">Colophon</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="registration-form">
+            <h2>Book Your Free First Lesson</h2>
+            <p>Please complete the form below to sign up for a complimentary trial karate session.</p>
+
+            <figure>
+                <img src="images/trial.jpg" alt="Child preparing for karate training" width="400">
+                <figcaption>Try your first lesson completely free with our certified coaches.</figcaption>
+            </figure>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <p class="form-group">
+                        <label for="parent-name">Parent / Student Full Name:*</label><br>
+                        <input type="text" id="parent-name" name="parent_name" placeholder="e.g. Arman Aliyev" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="contact-email">Email Address:*</label><br>
+                        <input type="email" id="contact-email" name="contact_email" placeholder="example@mail.com" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="contact-phone">Phone Number:*</label><br>
+                        <input type="tel" id="contact-phone" name="contact_phone" placeholder="+7 707 123 45 67" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="trial-date">Preferred Trial Date:*</label><br>
+                        <input type="date" id="trial-date" name="trial_date" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="student-age">Student Age (Years):</label><br>
+                        <input type="number" id="student-age" name="student_age" min="4" max="60" value="12">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Training Details</legend>
+
+                    <p class="form-group">
+                        <label for="age-group-select">Select Age Group:*</label><br>
+                        <select id="age-group-select" name="age_group" required>
+                            <option value="">-- Select Group --</option>
+                            <option value="junior">Junior Group (Ages 4–10, 19:00)</option>
+                            <option value="senior">Senior Group (Ages 10+, 20:00)</option>
+                        </select>
+                    </p>
+
+                    <p class="form-group">Preferred Location:<br>
+                        <input type="radio" id="musrepov" name="location" value="musrepov" checked>
+                        <label for="musrepov">Gabit Musrepov 14/2</label><br>
+                        <input type="radio" id="kudaiberdyuly" name="location" value="kudaiberdyuly">
+                        <label for="kudaiberdyuly">Kudaiberdyuly 23</label>
+                    </p>
+
+                    <p class="form-group">
+                        <!-- Span used to apply specific styling without structural semantic meaning -->
+                        <span class="highlight-text">Additional Options:</span><br>
+                        <input type="checkbox" id="need-gear" name="need_gear" value="yes">
+                        <label for="need-gear">I need advice on buying a kimono/gi before starting</label>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="notes">Additional Comments or Medical Notes:</label><br>
+                        <textarea id="notes" name="notes" rows="4" cols="40" placeholder="Mention any previous sports experience..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p class="form-group">
+                    <!-- Inline style attribute used strictly once to demonstrate priority override over CSS files -->
+                    <button type="submit" class="btn-submit" style="background-color: #d9534f; color: white;">Submit Registration</button>
+                    <button type="reset">Reset Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact Us: <a href="tel:+77071234567">+7 (707) 123-4567</a> | Email: <a href="mailto:info@samurai-astana.kz">info@samurai-astana.kz</a></p>
+        <p>&copy; 2026 SAMURAI Sports Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

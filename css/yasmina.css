@@ -1,0 +1,318 @@
+/* yasmina.css - Персональные стили, размеры и оформление */
+
+/* СТИЛИЗАЦИЯ MAIN И КОНТЕНТА */
+main {
+    background-color: #0b0f17 !important; /* Чёрный фон */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ОГРОМНЫЙ ЗАГОЛОВОК WELCOME TO SAMURAI */
+main h1 {
+    font-size: 52px !important;
+    font-weight: 900 !important;
+    color: #ffffff !important; /* Белые буквы */
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 15px !important;
+    line-height: 1.1;
+}
+
+/* ПОДЗАГОЛОВКИ */
+main h2 {
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    color: #d90429 !important; /* Красный самурайский акцент */
+    margin-top: 40px !important;
+    margin-bottom: 15px !important;
+}
+
+main h3 {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #9bbdf4 !important; /* Голубой акцент */
+    margin-top: 25px !important;
+    margin-bottom: 10px !important;
+}
+
+/* ВЕСЬ ТЕКСТ В MAIN - КРУПНЫЙ И БЕЛЫЙ */
+main p, main li, main td, main th {
+    font-size: 19px !important;
+    color: #e2e8f0 !important; /* Четкий светлый текст */
+    line-height: 1.7 !important;
+    margin-bottom: 15px !important;
+}
+
+/* ССЫЛКИ ВНУТРИ ТЕКСТА */
+main a {
+    color: #9bbdf4 !important;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+main a:hover {
+    color: #d90429 !important;
+}
+
+/* КРАСНЫЕ КНОПКИ */
+.btn, a.btn {
+    display: inline-block;
+    background-color: #d90429 !important;
+    color: #ffffff !important;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 6px;
+    text-decoration: none !important;
+    margin-right: 10px;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b00020 !important;
+}
+
+/* ОФОРМЛЕНИЕ КАРТИНОК */
+main img {
+    max-width: 650px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+}
+
+/* ЦИТАТА ТРЕНЕРА */
+blockquote {
+    background-color: #111827;
+    border-left: 5px solid #d90429;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+blockquote p {
+    font-style: italic;
+    font-size: 21px !important;
+    color: #ffffff !important;
+}
+/* Стилизация таблицы расписания и цен */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: #1e293b !important; /* Тёмно-серый контрастный фон таблицы */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+caption {
+    font-size: 16px;
+    font-weight: 600;
+    color: #9bbdf4 !important; /* Голубой цвет подписи таблицы */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border: 1px solid #334155 !important; /* Чёткие светлые рамки */
+    color: #ffffff !important; /* Белый читаемый текст */
+    font-size: 17px !important;
+}
+
+th {
+    background-color: #d90429 !important; /* Красная самурайская шапка таблицы */
+    color: #ffffff !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px !important;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #162032 !important; /* Чередование строк для удобства */
+}
+
+tr:hover {
+    background-color: #273549 !important; /* Подсветка строки при наведении */
+}
+/* ==========================================
+   СТИЛИ ДЛЯ СТРАНИЦЫ ФОРМЫ (order.html)
+   ========================================== */
+
+/* Красивые карточки-секции формы */
+fieldset {
+    background-color: #1e293b !important; /* Тёмно-серый фон карточек */
+    border: 2px solid #334155 !important;
+    border-radius: 12px;
+    padding: 25px 30px !important;
+    margin-bottom: 30px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Названия секций формы (Personal Information и т.д.) */
+legend {
+    color: #d90429 !important; /* Красный самурайский акцент */
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    padding: 0 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Метки полей ввода (Labels) */
+label {
+    display: block;
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+/* Все текстовые поля, календарь, числа и выпадающие списки */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100% !important;
+    max-width: 600px;
+    padding: 12px 16px !important;
+    font-size: 16px !important;
+    border-radius: 8px !important;
+    border: 1px solid #475569 !important;
+    background-color: #0f172a !important; /* Тёмный фон внутри полей */
+    color: #ffffff !important; /* Белый текст при вводе */
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+/* Подсветка полей при клике (Focus) */
+input:focus, select:focus, textarea:focus {
+    outline: none !important;
+    border-color: #9bbdf4 !important;
+    box-shadow: 0 0 0 3px rgba(155, 189, 244, 0.3) !important;
+}
+
+/* Стилизация радиокнопок и чекбоксов */
+input[type="radio"],
+input[type="checkbox"] {
+    width: 18px !important;
+    height: 18px !important;
+    accent-color: #d90429 !important; /* Красный цвет галочки/точки */
+    vertical-align: middle;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Подписи к радиокнопкам и чекбоксам */
+fieldset label {
+    font-weight: 500 !important;
+    cursor: pointer;
+}
+
+/* Картинка вверху страницы формы */
+.form-hero-img, main img {
+    max-width: 100% !important;
+    width: 100% !important;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 25px !important;
+}
+
+/* Кнопки отправки и сброса формы */
+button[type="submit"], input[type="submit"] {
+    background-color: #d90429 !important; /* Красная кнопка */
+    color: #ffffff !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    padding: 14px 32px !important;
+    border: none !important;
+    border-radius: 30px !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-right: 15px;
+}
+
+button[type="submit"]:hover, input[type="submit"]:hover {
+    background-color: #b00020 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(217, 4, 41, 0.4);
+}
+
+button[type="reset"], input[type="reset"] {
+    background-color: transparent !important;
+    color: #94a3b8 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    padding: 12px 24px !important;
+    border: 1px solid #475569 !important;
+    border-radius: 30px !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button[type="reset"]:hover, input[type="reset"]:hover {
+    background-color: #334155 !important;
+    color: #ffffff !important;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Блок со списком адресов */
+.address-list-box {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+}
+
+.address-list-box h3 {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.dojo-addresses {
+    color: #cbd5e1;
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+.dojo-addresses li strong {
+    color: #ffffff;
+}
+
+.dojo-addresses a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.dojo-addresses a:hover {
+    text-decoration: underline;
+}
+.hero-logo {
+    max-width: 180px; /* Фиксируем ширину, чтобы картинка не была гигантской */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* Выравниваем по центру */
+}

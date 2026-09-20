@@ -1,0 +1,93 @@
+/* base.css - Базовые стили и сетка */
+
+/* Сброс стандартных отступов */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ЧЁРНЫЙ ФОН И БЕЛЫЙ ТЕКСТ ПО УМОЛЧАНИЮ */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0b0f17; /* Глубокий чёрный фон */
+    color: #ffffff; /* Белый текст */
+}
+
+/* НЕБЕСНО-ГОЛУБАЯ ШАПКА В ОДНУ СТРОКУ */
+header {
+    background-color: #9bbdf4; /* Небесно-голубой фон */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between; /* Заголовок слева, меню справа */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* ЗАГОЛОВОК В ШАПКЕ */
+header h1 {
+    color: #0b0f17; /* Тёмный цвет для контраста на голубом */
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* НАВИГАЦИЯ СПРАВА В ОДНУ СТРОКУ БЕЗ ТОЧЕК */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    list-style: none; /* Убираем точки списка */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+/* КНОПКИ МЕНЮ */
+nav a {
+    color: #0b0f17;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #0b0f17;
+    color: #ffffff;
+}
+
+nav a:focus {
+    outline: 2px solid red; /* Обязательное требование ТЗ */
+}
+
+/* ЧЁРНЫЙ ПОДВАЛ */
+footer {
+    background-color: #05070a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-top: 2px solid #d90429;
+}
+
+footer a {
+    color: #9bbdf4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
