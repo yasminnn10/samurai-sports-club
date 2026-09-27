@@ -6,114 +6,194 @@
     <meta name="description" content="Services, monthly pricing, and training schedules for SAMURAI Sports Club.">
     <meta name="author" content="Yasmina">
     <title>SAMURAI Sports Club | Services &amp; Pricing</title>
+
+    <!-- Bootstrap v5.3.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/yasmina.css">
 </head>
 <body>
-   <header>
-    <div class="logo-container">
-        <img src="images/logo.png" alt="SAMURAI DOJO Logo" class="header-logo">
-        <h1>SAMURAI Sports Club Astana</h1>
-    </div>        
-     <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services &amp; Pricing</a></li>
-                <li><a href="order.html">Book Free Trial</a></li>
-                <li><a href="colophon.html">Colophon</a></li>
-            </ul>
-     </nav>
+
+    <!-- Навигация Bootstrap Navbar -->
+    <!-- ВЫБОР КОНТЕЙНЕРА: Выбран .container-fluid в шапке, чтобы панель навигации растягивалась на всю ширину экрана -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/logo.png" alt="SAMURAI DOJO Logo" class="header-logo">
+                    <span class="fs-4 fw-bold text-uppercase text-white">SAMURAI Sports Club</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="services.html">Services &amp; Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="order.html">Book Free Trial</a></li>
+                        <li class="nav-item"><a class="nav-link" href="colophon.html">About us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <section id="pricing">
-            <h2>Training Programs &amp; Pricing</h2>
-            <p>Check our authentic monthly membership rates and group schedules below.</p>
+    <!-- Основной контент страницы -->
+    <!-- ВЫБОР КОНТЕЙНЕРА: Выбран .container для ограничения максимальной ширины основного текста и удобства чтения -->
+    <main class="container my-5">
+        
+        <!-- Секция цен и расписания -->
+        <section id="pricing" class="mb-5">
+            <h1 class="display-5 fw-bold text-center text-white mb-2">Training Programs &amp; Pricing</h1>
+            <p class="lead text-center text-muted mb-4">Check our authentic monthly membership rates and group schedules below.</p>
 
-            <table class="price-table">
-                <caption>Table 1: SAMURAI Karate Membership Plans and Schedules</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Age Group</th>
-                        <th scope="col">Training Days</th>
-                        <th scope="col">Time</th>
-                        <th scope="col">Monthly Fee</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Junior Group (Ages 4–10)</td>
-                        <td>Mon, Wed, Fri</td>
-                        <td>19:00 – 20:00</td>
-                        <td>20,000 KZT</td>
-                    </tr>
-                    <tr>
-                        <td>Senior Group (Ages 10+)</td>
-                        <td>Mon, Wed, Fri</td>
-                        <td>20:00 – 21:15</td>
-                        <td>20,000 KZT</td>
-                    </tr>
-                    <tr>
-                        <td>Trial Lesson (First Visit)</td>
-                        <td>Any Scheduled Day</td>
-                        <td>Flexible</td>
-                        <td>FREE</td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- Стилизация таблицы классами Bootstrap -->
+            <div class="table-responsive">
+                <table class="table table-dark table-striped table-hover table-bordered align-middle">
+                    <caption class="text-muted">Table 1: SAMURAI Karate Membership Plans and Schedules</caption>
+                    <thead class="table-secondary">
+                        <tr>
+                            <th scope="col">Age Group</th>
+                            <th scope="col">Training Days</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Monthly Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Junior Group (Ages 4–10)</td>
+                            <td>Mon, Wed, Fri</td>
+                            <td>19:00 – 20:00</td>
+                            <td class="fw-bold">20,000 KZT</td>
+                        </tr>
+                        <tr>
+                            <td>Senior Group (Ages 10+)</td>
+                            <td>Mon, Wed, Fri</td>
+                            <td>20:00 – 21:15</td>
+                            <td class="fw-bold">20,000 KZT</td>
+                        </tr>
+                        <tr>
+                            <td>Trial Lesson (First Visit)</td>
+                            <td>Any Scheduled Day</td>
+                            <td>Flexible</td>
+                            <td><span class="badge bg-success fs-6">FREE</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <section id="schedule-details">
-            <h2>Steps to Join SAMURAI Club</h2>
-            
-            <ol start="1" type="1">
-                <li>Submit an online trial lesson request.</li>
-                <li>Receive confirmation via WhatsApp or phone call.</li>
+        <!-- Шаги для вступления -->
+        <section class="mb-5 p-4 bg-brand-dark rounded border border-secondary">
+            <h2 class="h3 text-danger fw-bold mb-3">Steps to Join SAMURAI Club</h2>
+            <ol class="text-white mb-0 ps-3">
+                <li class="mb-2">Submit an online trial lesson request.</li>
+                <li class="mb-2">Receive confirmation via WhatsApp or phone call.</li>
                 <li>Arrive 10 minutes before class with sports clothes.</li>
             </ol>
-
-            <div class="schedule-card">
-                <h3>Group Class Breakdown</h3>
-                <ul>
-                    <li>Junior Groups (Ages 4–10)
-                        <ul>
-                            <li>General Physical Training (ОФП)</li>
-                            <li>Basic Karate Stances &amp; Coordination</li>
-                        </ul>
-                    </li>
-                    <li>Senior Groups (Ages 10+)
-                        <ul>
-                            <li>Advanced Kumite &amp; Kata Techniques</li>
-                            <li>Sparring and Belt Examinations</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="schedule-card">
-                <h3>Karate Terminology</h3>
-                <dl>
-                    <dt>Dojo</dt>
-                    <dd>A formal hall or space used for martial arts training and practicing karate.</dd>
-                    <dt>Kumite</dt>
-                    <dd>The person-to-person sparring section of karate training.</dd>
-                </dl>
-            </div>
-
-            <figure>
-                <img src="images/equipment.jpg" alt="Karate belts and protective equipment" width="400">
-                <figcaption>Quality karate pads and equipment are available for all students.</figcaption>
-            </figure>
-
-            <p class="info-text">Note: First-time guests are eligible for a <mark>100% free trial session</mark>. <small>*Registration required.</small></p>
         </section>
+
+        <!-- АДАПТИВНАЯ СЕТКА GRID (3 колонки на ПК, 2 на планшете, 1 на телефоне) -->
+        <section id="schedule-details" class="row g-4 mb-5">
+            
+            <!-- Колонка 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="p-4 bg-brand-dark rounded border border-secondary h-100">
+                    <h3 class="h4 text-danger fw-bold mb-3">Group Class Breakdown</h3>
+                    <ul class="text-muted ps-3 mb-0">
+                        <li class="mb-2"><strong class="text-white">Junior Groups (Ages 4–10)</strong>
+                            <ul class="ps-3 mt-1">
+                                <li>General Physical Training (ОФП)</li>
+                                <li>Basic Karate Stances &amp; Coordination</li>
+                            </ul>
+                        </li>
+                        <li><strong class="text-white">Senior Groups (Ages 10+)</strong>
+                            <ul class="ps-3 mt-1">
+                                <li>Advanced Kumite &amp; Kata Techniques</li>
+                                <li>Sparring and Belt Examinations</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Колонка 2: Демонстрация вложенности сетки (Nesting) -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="p-4 bg-brand-dark rounded border border-secondary h-100">
+                    <h3 class="h4 text-danger fw-bold mb-3">Karate Terminology</h3>
+                    <!-- ВЛОЖЕННАЯ СЕТКА (Nesting): row внутри col-* -->
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <dt class="text-white fw-bold">Dojo</dt>
+                            <dd class="text-muted mb-0">A formal hall or space used for martial arts training and practicing karate.</dd>
+                        </div>
+                        <div class="col-12">
+                            <dt class="text-white fw-bold">Kumite</dt>
+                            <dd class="text-muted mb-0">The person-to-person sparring section of karate training.</dd>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Колонка 3 -->
+            <div class="col-12 col-lg-4">
+                <div class="p-4 bg-brand-dark rounded border border-secondary h-100 text-center">
+                    <h3 class="h4 text-danger fw-bold mb-3">Training Equipment</h3>
+                    <figure class="mb-0">
+                        <img src="images/equipment.jpg" alt="Karate belts and protective equipment" class="img-fluid rounded mb-2">
+                        <figcaption class="figure-caption text-muted">Quality karate pads and equipment are available for all students.</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ПОДКЛЮЧЕННЫЙ КОМПОНЕНТ BOOTSTRAP: Accordion (Часто задаваемые вопросы) -->
+        <!-- Component: Bootstrap Accordion. Changes: Customized headings and body text for SAMURAI Club FAQs -->
+        <section class="mb-5">
+            <h2 class="h3 text-danger fw-bold text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush rounded border border-secondary overflow-hidden" id="faqAccordion">
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button bg-brand-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            What should my child wear for the first trial lesson?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted">
+                            Comfortable sports clothes (t-shirt and sweatpants) and bare feet or light socks are perfect for the first session.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button bg-brand-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Are parents allowed to watch the training process?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted">
+                            Yes, we have a dedicated waiting area for parents where you can observe the training session.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Утилита скрытия/отображения (Responsive display utility) -->
+        <div class="p-3 bg-brand-dark rounded border border-secondary text-center text-md-start d-none d-sm-block">
+            <p class="mb-0 text-white">Note: First-time guests are eligible for a <mark class="bg-warning text-dark px-2 rounded">100% free trial session</mark>. <small class="text-muted">*Registration required.</small></p>
+        </div>
+
     </main>
 
-    <footer>
-        <p>Contact Us: <a href="tel:+77071234567">+7 (707) 123-4567</a> | Email: <a href="mailto:info@samurai-astana.kz">info@samurai-astana.kz</a></p>
-        <p>&copy; 2026 SAMURAI Sports Club. All rights reserved.</p>
+    <!-- Подвал сайта -->
+    <footer class="bg-dark text-white text-center py-4 border-top border-secondary">
+        <div class="container">
+            <p class="mb-1">Contact Us: <a href="tel:+77071234567" class="text-danger text-decoration-none">+7 (707) 123-4567</a> | Email: <a href="mailto:info@samurai-astana.kz" class="text-danger text-decoration-none">info@samurai-astana.kz</a></p>
+            <p class="mb-0 text-muted small">&copy; 2026 SAMURAI Sports Club. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
