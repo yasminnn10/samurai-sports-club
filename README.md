@@ -1,65 +1,118 @@
-# SAMURAI Sports Club Astana — Midterm Project
+# SAMURAI Sports Club Website
 
 ## Project Overview
-Official website for SAMURAI Sports Club in Astana, specializing in professional karate training and general physical conditioning (ОФП) for children (aged 4+) and adults.
 
-- **Author / Student:** Yasmina
-- **Course:** Introduction to Web Technologies
-- **Framework:** Bootstrap v5.3.3
-- **Custom CSS:** `css/yasmina.css`
+SAMURAI Sports Club is a responsive website for a karate and martial arts club. It provides information about training programs, coaches, club branches, schedules, membership prices, and trial lesson registration.
 
----
+The website is designed to help visitors explore available training options and learn more about the club before joining.
 
-## Page Structure
-1. `index.html` — Homepage featuring club introduction, core advantages, and head coach quote.
-2. `services.html` — Pricing table, training schedules, karate terminology, and FAQ accordion.
-3. `order.html` — Interactive registration form to book a free trial karate session across 8 Astana dojos.
-4. `colophon.html` — Information about certified coaches with mastery indicators and Dojo rules modal window.
+## Main Features
 
----
+### 1. Home Page
+- Introduction to SAMURAI Sports Club.
+- Main navigation menu.
+- Information about the club's advantages.
+- Quick links to training schedules and trial registration.
 
-## Three User Journeys
+### 2. Training Programs & Pricing
+- Dynamic training program table.
+- Search functionality.
+- Category filtering.
+- Price sorting.
+- Information about age groups, schedules, and prices.
 
-### Journey 1: Find Pricing, Schedule, and Book a Trial Lesson
-1. **Start:** User opens `index.html` looking for karate classes for their child.
-2. **Steps:**
-   - User clicks the **"Our Schedules & Fees"** button in the main hero section.
-   - User navigates to `services.html`, reviews the pricing table (Junior/Senior groups), and checks class times.
-   - Satisfied with the schedule, user clicks the **"Book Free Trial"** link in the navigation menu.
-3. **End:** User arrives at `order.html`, selects a branch, and submits the booking form.
+Available programs include:
+- Junior Group
+- Senior Group
+- Trial Lesson
+- Private Training
+- Weekend Training
+- Advanced Karate
 
-### Journey 2: Explore Coaches, Read Dojo Etiquette, and Apply
-1. **Start:** User opens `index.html` and wants to verify coach qualifications before enrolling.
-2. **Steps:**
-   - User clicks **"About Us"** in the navigation menu to visit `colophon.html`.
-   - User reviews the coach cards (Azamat, Ruslan, Timur) and their experience progress bars.
-   - User clicks the **"View Dojo Rules"** button to open the interactive modal window and read the club code.
-3. **End:** User closes the modal and clicks the **"Book Free Trial"** navigation item to complete registration.
+### 3. Payment Calculator
+- Select a training program.
+- Choose a payment method.
+- Select a demonstration payment period (3, 6, or 12 months).
+- Automatically calculate an illustrative monthly amount.
 
-### Journey 3: Quick Direct Trial Booking
-1. **Start:** A returning user or direct visitor lands on `index.html`.
-2. **Steps:**
-   - User immediately clicks the bright red **"Book Free Trial"** CTA button on the homepage.
-   - User is redirected directly to `order.html`.
-   - User fills in their full name, phone number, email address, and selects "Dojo 1: Musrepov 14/2".
-3. **End:** User clicks **"Submit Application"** and receives visual confirmation area prepared for JS.
+**Note:** The calculator is for demonstration purposes only. It does not process real payments or represent an official Kaspi installment offer.
 
----
+### 4. Coaches Section
+- Coach profile cards with photos.
+- Information about each coach's experience and qualifications.
+- Individual coach details displayed in a modal window.
+- Links to trial registration with the selected coach and branch.
 
-## Readiness for JavaScript (Freeze Readiness)
-- Every interactive element, form input, button, section, and card has a unique lowercase English `id`.
-- Empty alert containers (`#form-alert-container`, `#services-alert-container`, etc.) are pre-built to receive dynamic messages via JavaScript.
-- CSS utility classes for state management (`.is-hidden`, `.is-active`, `.is-error`, `.is-success`) are predefined in `css/yasmina.css`.
+### 5. Trial Lesson Registration
+- Registration form for a free trial lesson.
+- Branch selection.
+- Coach selection based on the selected branch.
+- Form validation and submission feedback.
 
----
+### 6. Additional Information
+- Steps for joining the club.
+- Information about training programs and equipment.
+- Frequently Asked Questions (FAQ).
 
-## Quality Pass & Bug Fix Log
-- **Navigation Consistency:** Ensured all 4 pages share the identical header, navbar structure, active tab states, and footer.
-- **Image Optimization:** Fixed card photo proportions for coaches in `yasmina.css` using `object-fit: cover`.
-- **Validation:** Verified W3C HTML compliance with zero errors and clean console logs.
-- **Link Verification:** Removed all `href="#"` dead links; all navigation paths lead to valid pages.
+## Technologies Used
 
----
+- HTML5
+- CSS3
+- JavaScript (Vanilla JavaScript)
+- jQuery
+- Bootstrap 5
 
-## AI Log Policy
-- AI was consulted exclusively for explaining Web Technologies concepts, CSS layout debugging, and generating structured documentation.
+## Project Structure
+
+```text
+samurai-sports-club/
+│
+├── index.html
+├── services.html
+├── order.html
+├── colophon.html
+├── README.md
+│
+├── css/
+│   ├── base.css
+│   └── yasmina.css
+│
+├── js/
+│   ├── main.js
+│   ├── services.js
+│   ├── order.js
+│   ├── colophon.js
+│   ├── coaches.js
+│   ├── payment.js
+│   ├── steps.js
+│   ├── info-cards.js
+│   ├── faq.js
+│   ├── jquery.js
+│   └── ...
+│
+└── images/
+    └── ...
+```
+
+## How to Run the Project
+
+1. Download or clone this repository.
+2. Open the project folder in an IDE such as IntelliJ IDEA or Visual Studio Code.
+3. Open `index.html` in a browser.
+4. Navigate through the website using the navigation menu.
+
+For the best experience, use a local development server, such as the Live Server extension in Visual Studio Code.
+
+## Important Notes
+
+- The website is an educational project.
+- Training schedules, prices, coach information, and available places are demonstration data.
+- The payment calculator does not connect to Kaspi or any banking service.
+- The registration form does not create a real booking or process an actual payment.
+
+## Author
+
+Developed as a university web development project.
+
+**Project:** SAMURAI Sports Club  
+**Repository:** https://github.com/yasminnn10/samurai-sports-club.git
